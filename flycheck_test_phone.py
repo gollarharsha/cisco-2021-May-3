@@ -10,15 +10,13 @@ def test_empty_phone(sample_phone):
     assert sample_phone.call_history == []
 
 
-def test_id_number():
-    p = Phone(1)
-    assert p.id_number == 1
+def test_id_number(sample_phone):
+    assert sample_phone.id_number == 1
 
 
-def test_make_some_calls():
-    p = Phone(1)
-    p.call('12345')
-    p.call('67890')
+def test_make_some_calls(sample_phone):
+    sample_phone.call('12345')
+    sample_phone.call('67890')
     assert '12345' in p.call_history
     assert '67890' in p.call_history
 
