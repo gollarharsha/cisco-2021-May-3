@@ -1,7 +1,7 @@
 def firstlast(seq):
     if not seq:
         return seq
-    
+
     if isinstance(seq, str):
         return seq[0] + seq[-1]
 
@@ -11,4 +11,5 @@ def firstlast(seq):
     elif isinstance(seq, tuple):
         return (seq[0], seq[-1])
 
-    els
+    else:
+        raise TypeError('Not a sequence!')
