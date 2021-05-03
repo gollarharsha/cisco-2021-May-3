@@ -12,7 +12,8 @@ import pytest
                         ('first2', 'last2')],
                 scope='session')
 def a_person(request):
-    p = Person(request.param[0], request.param[1])
+    p = Person(request.param[0],
+               request.param[1])
     return p
 
 
