@@ -19,6 +19,7 @@ import pytest
                              # list of tuples, each tuple with param values
                              ([10, 20, 30], 60),
                              ([10.2, 20, 30], 60.2),
+                             ([-10, 20, 30], 40),
                              ([1.2, 3.4], 4.6)
                          ])
 def test_mysum(numbers, result):
