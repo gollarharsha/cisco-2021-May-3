@@ -1,3 +1,6 @@
+from mysum import mysum
+
+
 def test_mysum_int():
     assert mysum([10, 20, 30]) == 60
 
