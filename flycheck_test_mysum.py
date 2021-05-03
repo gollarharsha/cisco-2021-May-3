@@ -14,7 +14,7 @@ import pytest
 #     assert isinstance(mysum([1.2, 3.4]), float)
 
 
-@pytest.mark.parameterize
+@pytest.mark.parameterize('numbers
 
 
 def test_mysum_strings():
