@@ -2,6 +2,5 @@ import os
 
 
 def test_something(monkeypatch):
-    monkeypatch.setattr('os.pathsep', '||')
-    print(os.pathsep)
-    # print(os.path.join('abcd', 'efgh', 'ijkl'))
+    monkeypatch.setattr('os.path.join', lambda x: '/etc/passwd')
+    print(os.path.join('stuff'))
