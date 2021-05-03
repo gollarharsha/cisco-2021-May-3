@@ -17,7 +17,8 @@ def test_only_evens():
     assert output['evens'] == [6, 8, 10]
     assert output['odds'] == []
 
+
 def test_only_odds():
-    output = evens_and_odds([5, 3
-    assert output['evens'] == [6, 8, 10]
-    assert output['odds'] == []
+    output = evens_and_odds([5, 3, 7])
+    assert output['evens'] == []
+    assert output['odds'] == [5, 3, 7]]
