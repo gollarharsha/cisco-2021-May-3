@@ -7,4 +7,6 @@ def fake_input():
     return StringIO('10 20')
 
 def test_simple_adding(monkeypatch, fake_input):
-    monkeypatch.setattr('sys.stdin', fake_input(
+    monkeypatch.setattr('sys.stdin', fake_input)
+    value = add_numbers()
+    assert va
