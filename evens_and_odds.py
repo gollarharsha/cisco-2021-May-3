@@ -7,4 +7,5 @@ def evens_and_odds(numbers):
         else:
             output['evens'].append(one_number)
 
+    print(f'In evens_and_odds, {output=}')
     return output
