@@ -2,16 +2,6 @@ import pytest
 from phone import Phone
 
 
-@pytest.fixture
-def sample_phone():
-    return Phone(1)
-
-
-@pytest.fixture
-def good_phone_numbers():
-    return ['12345', '67890', '2468', '1357']
-
-
 def test_empty_phone(sample_phone):
     assert sample_phone.call_history == []
 
