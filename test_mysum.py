@@ -14,4 +14,5 @@ def test_mysum_floats():
 
 
 def test_mysum_strings():
-    assert mysum(['a', 'b', 'c']) == TypeError
+    with pytest.raises(TypeError):
+        assert mysum(['a', 'b', 'c'])
