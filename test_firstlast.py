@@ -11,3 +11,12 @@ import pytest
                           ((100, 200), (100, 200))])
 def test_firstlast(seq, result):
     assert firstlast(seq) == result
+
+
+@pytest.mark.parametrize('nonseq',
+                         [(5,),
+                          ({10, 20, 30},),
+                          ({'a': 1, 'b': 2})])
+def test_nonsequence(nonseq):
+    with pytest.raises(TypeError):
+        firstlast(nonseq)
