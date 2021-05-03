@@ -7,5 +7,5 @@ def test_good_file_length():
 
 
 def test_bad_file_length():
-    with pytest.raises(OSError):
+    with pytest.raises(Exception):
         file_length('/etcccc/adfsa')
