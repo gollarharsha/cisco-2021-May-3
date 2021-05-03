@@ -11,8 +11,8 @@ import pytest
 @pytest.fixture(params=[('first1', 'last1'),
                         ('first2', 'last2')],
                 scope='session')
-def a_person():
-    p = Person('first1', 'last1')
+def a_person(request):
+    p = Person(, 'last1')
     return p
 
 
