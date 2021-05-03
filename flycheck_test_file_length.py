@@ -2,7 +2,7 @@ import pytest
 from file_length import file_length
 
 def short_file(tmp_path):
-    d = 
+    open(tmp_path
 
 
 
