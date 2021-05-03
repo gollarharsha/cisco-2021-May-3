@@ -9,3 +9,4 @@ def mysum(numbers):
 
 def test_mysum():
     assert mysum([10, 20, 30]) == 60
+    assert mysum([10.2, 20, 30]) == 60.2
