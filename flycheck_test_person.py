@@ -12,7 +12,7 @@ def a_person():
 @pytest.fixture
 def five():
     
-    return 5
+    yield 5   # everything before the "yield" is setup / everything after is teardown
 
 
 def test_create_person(a_person):
