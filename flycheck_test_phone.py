@@ -2,7 +2,7 @@ import pytest
 from phone import Phone
 
 
-def test_empty_phone(sample_phone):
+def test_empty_phone():
     assert sample_phone.call_history == []
 
 
