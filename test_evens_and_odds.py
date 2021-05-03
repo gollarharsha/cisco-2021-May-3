@@ -1,5 +1,7 @@
 from evens_and_odds import evens_and_odds
 
+
 def test_no_numbers():
     output = evens_and_odds([])
-    assert 'evens' in 
+    assert output['evens'] == []
+    assert output['odds'] == []
