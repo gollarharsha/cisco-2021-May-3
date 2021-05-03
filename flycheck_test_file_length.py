@@ -7,5 +7,5 @@ def test_good_file_length():
 
 
 def test_bad_file_length():
-    with pytest.raises(
-    assert file_length('/etcccc/passwddddd') == 7579
+    with pytest.raises(FileNotFoundError):
+         file_length('/etcccc/
