@@ -14,6 +14,7 @@ def fake_name_input():
     s = StringIO('Reuven\n')
 
 
-def test_say_hello():
+def test_say_hello(monkeypatch, fake_name_input):
+    monkeypatch.setattr('sys.stdin', fake_name_input)
     output = say_hello()
     assert output == 'Hello, Reuven!'
