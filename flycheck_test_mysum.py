@@ -14,6 +14,9 @@ import pytest
 #     assert isinstance(mysum([1.2, 3.4]), float)
 
 
+@pytest.mark.parameterize
+
+
 def test_mysum_strings():
     with pytest.raises(TypeError):
         # secret __enter__ method
