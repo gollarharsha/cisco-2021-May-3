@@ -2,12 +2,12 @@ import pytest
 from phone import Phone
 
 @pytest.fixture
+def sample_phone():
+    return Phone(1)
 
 
-
-def test_empty_phone():
-    p = Phone(1)
-    assert p.call_history == []
+def test_empty_phone(sample_phone):
+    assert sample_phone.call_history == []
 
 
 def test_id_number():
