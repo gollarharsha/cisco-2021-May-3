@@ -14,3 +14,5 @@ def test_make_some_calls():
 
 def test_bad_phone_number():
     p = Phone()
+    with pytest.raises(ValueError):
+        p.call('badnum1
