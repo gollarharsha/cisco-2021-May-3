@@ -1,4 +1,5 @@
 def evens_and_odds(numbers):
+    print(f'running evens_and_odds with {numbers=}')
     output = {'evens': [], 'odds': []}
 
     for one_number in numbers:
