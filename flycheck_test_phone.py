@@ -1,6 +1,9 @@
 import pytest
 from phone import Phone
 
+@pytest.fixture
+
+
 
 def test_empty_phone():
     p = Phone(1)
