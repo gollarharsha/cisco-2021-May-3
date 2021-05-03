@@ -12,7 +12,7 @@ def short_file(tmp_path):
 
 
 def test_good_file_length(short_file):
-    assert file_length(short_file.name) == 10
+    assert file_length(short_file) == 10
 
 
 def test_bad_file_length():
