@@ -1,3 +1,6 @@
+from myadd import add
+
+
 def test_add_positive_ints():
     assert add(2, 2) == 4
 
