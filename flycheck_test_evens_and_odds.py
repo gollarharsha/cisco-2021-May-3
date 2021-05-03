@@ -11,6 +11,6 @@ def test_no_numbers():
     assert output['odds'] == []
 
 def test_only_evens():
-    output = evens_and_odds([])
-    assert output['evens'] == []
+    output = evens_and_odds([6, 8, 10])
+    assert output['evens'] == [6]
     assert output['odds'] == []
