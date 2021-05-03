@@ -1,4 +1,4 @@
-@pytest.fixture(scope='session')
+check @ pytest.fixture(scope='session')
 
 
 def a_person():
