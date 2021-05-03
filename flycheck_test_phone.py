@@ -7,6 +7,9 @@ def sample_phone():
     return Phone(1)
 
 
+@pytest.fixture
+def good_phone_numbers():
+    
 
 def test_empty_phone(sample_phone):
     assert sample_phone.call_history == []
