@@ -12,7 +12,6 @@ def test_mysum_float_and_ints():
 def test_mysum_floats():
     assert isinstance(mysum([1.2, 3.4]), float)
 
+
 def test_mysum_strings():
     assert mysum([1.2, 3.4]) == TypeError
-
-    
