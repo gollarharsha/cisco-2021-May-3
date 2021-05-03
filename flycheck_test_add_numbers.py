@@ -3,7 +3,7 @@ from io import StringIO
 import pytest
 
 
-@pytest.fixture(params=['
+@pytest.fixture
 def fake_input():
     return StringIO('10 20\n')
 
