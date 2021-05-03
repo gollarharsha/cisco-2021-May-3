@@ -22,3 +22,7 @@ def test_get_last_name(a_person):
 
 def test_fullname(a_person):
     assert a_person.fullname() == 'first1 last1'
+
+
+def test_greet(a_person):
+    assert a_person.greet() == 'Hello, first1 last1!'
