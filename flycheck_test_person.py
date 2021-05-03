@@ -8,7 +8,9 @@ import pytest
 #     p = Person('first1', 'last1')
 #     return p
 
-@pytest.fixture(params=[('first1', 'last1scope='session')
+@pytest.fixture(params=[('first1', 'last1'),
+                        ('first2', 'last2')],
+                scope='session')
 def a_person():
     p = Person('first1', 'last1')
     return p
