@@ -10,7 +10,7 @@ def a_person():
 
 
 @pytest.fixture
-def sample_phone():
+def sample_phone(autouse=True):
     return Phone(1)
 
 
