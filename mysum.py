@@ -4,4 +4,4 @@ def mysum(numbers):
     for one_number in numbers:
         total += one_number
 
-    retur
+    return total
