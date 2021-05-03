@@ -8,6 +8,11 @@ def a_person():
     return p
 
 
+@pytest.fixture
+def five():
+    return 5
+
+
 def test_create_person(a_person):
     assert isinstance(a_person, Person)
 
