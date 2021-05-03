@@ -1,3 +1,5 @@
 from phone import Phone
 
-def
+def test_empty_phone():
+    p = Phone()
+    assert 
