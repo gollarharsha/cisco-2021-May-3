@@ -12,7 +12,9 @@ import pytest
 def test_firstlast(seq, result):
     assert firstlast(seq) == result
 
-@pytest.mark.parametrize(
+@pytest.mark.parametrize('nonseq',
+                         [(5,),
+                          
 def test_nonsequence():
     with pytest.raises(TypeError):
         firstlast(
