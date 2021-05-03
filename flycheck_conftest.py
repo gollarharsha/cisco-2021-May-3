@@ -1,3 +1,5 @@
+import pytest
+
 
 @pytest.fixture(scope='session')
 def a_person():
