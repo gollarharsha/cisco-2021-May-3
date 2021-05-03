@@ -21,4 +21,4 @@ def test_only_evens():
 def test_only_odds():
     output = evens_and_odds([5, 3, 7])
     assert output['evens'] == []
-    assert output['odds'] == [5, 3, 7]]
+    assert output['odds'] == [5, 3, 7]
