@@ -5,3 +5,7 @@ def mysum(numbers):
         total += one_number
 
     return total
+
+
+def test_mysum():
+    assert mysum([10, 20, 30]) == 60
