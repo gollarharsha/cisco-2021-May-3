@@ -2,7 +2,8 @@ from person import Person
 import pytest
 
 
-@pytest.fixture(  # decorator -- only affects the one function coming after it
+# decorator -- only affects the one function coming after it
+@pytest.fixture(scope='session')
 def a_person():
     p = Person('first1', 'last1')
     return p
