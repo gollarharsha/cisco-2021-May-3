@@ -4,4 +4,5 @@ class Phone:
         self.call_history = []
 
     def call(self, phone_number):
-        if 
+        if phone_number.isdigit():
+            self.call_history.append(phone_number)
