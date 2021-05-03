@@ -19,4 +19,4 @@ def test_get_first_name(a_person):
 def test_get_last_name(a_person):
     assert a_person.last == 'last1'
 
-def test_
+def test_fullname(a
