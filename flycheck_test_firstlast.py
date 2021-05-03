@@ -14,7 +14,7 @@ def test_firstlast(seq, result):
 
 
 @pytest.mark.parametrize('nonseq',
-                         [({'a': 1, 'b': 2})])
+                         [ ({'a': 1, 'b': 2})])
 def test_nonsequence(nonseq):
     with pytest.raises(TypeError):
         firstlast(nonseq)
