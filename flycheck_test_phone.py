@@ -6,4 +6,6 @@ def test_empty_phone():
     assert p.call_history == []
 
 def test_make_some_calls():
-    
+    p = Phone()
+    p.call('12345')
+    p.call(
