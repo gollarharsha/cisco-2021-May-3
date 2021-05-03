@@ -1,3 +1,4 @@
+from phone import Phone
 from person import Person
 import pytest
 
