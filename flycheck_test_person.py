@@ -12,10 +12,10 @@ def test_create_person(a_person):
     assert isinstance(a_person, Person)
 
 
-def test_get_first_name():
-    assert p.first_name == 'first1'
+def test_get_first_name(a_person):
+    assert a_person.first_name == 'first1'
 
 
-def test_get_last_name():
+def test_get_last_name(a_person):
     p = Person('first1', 'last1')
     assert p.last_name == 'last1'
