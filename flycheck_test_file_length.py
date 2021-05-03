@@ -8,4 +8,4 @@ def test_good_file_length():
 
 def test_bad_file_length():
     with pytest.raises(FileNotFoundError):
-         file_length('/etcccc/
+         file_length('/etcccc/adfsa')
