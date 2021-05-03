@@ -7,8 +7,7 @@ def a_person():
     return p
 
 
-def test_create_person():
-    p = Person('first1', 'last1')
+def test_create_person(a_person):
     assert isinstance(p, Person)
 
 
