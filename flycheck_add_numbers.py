@@ -1,2 +1,3 @@
 def add_numbers():
-    numbers = in
+    s = input('Enter numbers, separated by whitespace: ').strip()
+    first,
