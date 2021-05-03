@@ -9,7 +9,7 @@ def sample_phone():
 
 @pytest.fixture
 def good_phone_numbers():
-    return [
+    return ['12345', '67890', '2468', '1357']
 
 def test_empty_phone(sample_phone):
     assert sample_phone.call_history == []
