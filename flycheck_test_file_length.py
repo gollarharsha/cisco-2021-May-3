@@ -2,6 +2,7 @@ import pytest
 from file_length import file_length
 
 
+@pytest.fixture
 def short_file(tmp_path):
     with open(tmp_path / 'short_file.txt', 'w') as f:
         f.write('abcd\n')
@@ -11,7 +12,7 @@ def short_file(tmp_path):
 
 
 def test_good_file_length(short_file):
-    assert file_length() == 7579
+    assert file_length(short_file.name) == 10
 
 
 def test_bad_file_length():
