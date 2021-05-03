@@ -3,15 +3,24 @@ import pytest
 
 
 # decorator -- only affects the one function coming after it
-@pytest.fixture(scope='session')
-def a_person():
-    p = Person('first1', 'last1')
+# @pytest.fixture(scope='session')
+# def a_person():
+#     p = Person('first1', 'last1')
+#     return p
+
+@pytest.fixture(params=[('first1', 'last1'),
+                        ('first2', 'last2')],
+                scope='session')
+def a_person(request):
+    p = Person(request.param[0],
+               request.param[1])
     return p
 
 
 @pytest.fixture
 def five():
-    return 5
+
+    yield 5   # everything before the "yield" is setup / everything after is teardown
 
 
 def test_create_person(a_person):
