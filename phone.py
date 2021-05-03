@@ -9,4 +9,3 @@ class Phone:
             return 'OK'
 
         raise ValueError('Bad phone number')
-    
