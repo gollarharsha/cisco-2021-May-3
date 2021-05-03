@@ -2,7 +2,7 @@ from myadd import add
 
 
 def test_add_positive_ints():
-    assert add(2, 2) == 4
+    assert add(2, 2) == 5
 
 
 def test_add_negative_ints():
