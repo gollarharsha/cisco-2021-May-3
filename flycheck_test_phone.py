@@ -11,6 +11,7 @@ def sample_phone():
 def good_phone_numbers():
     return ['12345', '67890', '2468', '1357']
 
+
 def test_empty_phone(sample_phone):
     assert sample_phone.call_history == []
 
@@ -24,9 +25,6 @@ def test_make_some_calls(sample_phone, good_phone_numbers):
         assert sample_phone.call(one_phone_number) == 'OK'
 
     assert sample_phone.call_history == good_phone_numbers
-
-    assert '12345' in sample_phone.call_history
-    assert '67890' in sample_phone.call_history
 
 
 def test_bad_phone_number(sample_phone):
