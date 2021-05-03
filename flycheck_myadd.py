@@ -11,4 +11,9 @@ def test_add_negative_ints():
 
 
 def test_add_mixed_ints():
-    assert add(2, -2) == 1
+    assert add(2, -2) == 0
+
+def test_add_mixed_ints():
+    assert add(2, -2) == 0
+
+    
