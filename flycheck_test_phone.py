@@ -10,4 +10,7 @@ def test_make_some_calls():
     p.call('12345')
     p.call('67890')
     assert '12345' in p.call_history
-    assert '67890
+    assert '67890' in p.call_history
+
+def test_bad_phone_number():
+    p = Phone()
