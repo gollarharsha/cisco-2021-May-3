@@ -2,11 +2,12 @@ from myadd import add
 
 
 def test_add_positive_ints():
-
+    print('Checking positive ints')
     assert add(2, 2) == 4
 
 
 def test_add_negative_ints():
+    print('Checking negativer ints')
     assert add(-2, -2) == -4
 
 
