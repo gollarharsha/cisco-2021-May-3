@@ -17,11 +17,9 @@ def a_person(request):
     return p
 
 
-
-
 @pytest.fixture
 def five():
-    
+
     yield 5   # everything before the "yield" is setup / everything after is teardown
 
 
