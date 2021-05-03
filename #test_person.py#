@@ -6,10 +6,4 @@ def test_create_person():
 
 def test_get_first_name():
     p = Person('first1', 'last1')
-    assert p.first_name == 'first1'
-
-def test_get_first_name():
-    p = Person('first1', 'last1')
-    assert p.first_name == 'first1'
-    
-
+    assert p.first_naem
