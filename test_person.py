@@ -16,6 +16,5 @@ def test_get_first_name(a_person):
     assert a_person.first_name == 'first1'
 
 
-def test_get_last_name():
-    p = Person('first1', 'last1')
-    assert p.last_name == 'last1'
+def test_get_last_name(a_person):
+    assert a_person.last_name == 'last1'
