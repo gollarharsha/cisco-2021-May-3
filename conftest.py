@@ -1,3 +1,4 @@
+from person import Person
 import pytest
 
 
